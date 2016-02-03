@@ -43,8 +43,11 @@ accuracy = accuracy_score(pred,labels_test)
 print("Accuracy is equal to %0.4F %%" % (accuracy*100))
 
 #########################################################
+# Who wrote emails at 10,26 & 50 in the predictions
+
 answers = [pred[10],pred[26],pred[50]]
 print answers
 
+# How many emails were predicted to be in the Chris class (pred == 1)
 c_predicted = sum(pred)
 print "Number of emails predicted to be from Chris:", c_predicted
